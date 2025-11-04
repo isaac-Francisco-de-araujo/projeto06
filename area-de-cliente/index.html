@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Renova — Área do Cliente</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <h1>Renova</h1>
+      </div>
+      <nav>
+        <ul>
+          <li data-view="dashboard" class="active">Dashboard</li>
+          <li data-view="faturas">Faturas</li> 
+          <li data-view="presencas">Presenças</li>
+          <li data-view="perfil">Perfil</li>
+          <li data-view="planos">Planos</li>
+        </ul>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logout" >Sair</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="topbar-left">
+          <h2 id="view-title">Dashboard</h2>
+        </div>
+        <div class="topbar-right">
+          <div class="user">Olá, <strong>Usuário</strong></div>
+        </div>
+      </header>
+
+      <section class="content">
+        <!-- Dashboard -->
+        <div id="dashboard" class="view">
+          <div class="cards">
+            <div class="card small">
+              <h3>Plano</h3>
+              <p id="current-plan">Renova Premium</p>
+            </div>
+            <div class="card small">
+              <h3>Fatura Atual</h3>
+              <p id="current-invoice">R$ 129,90 — Venc: 10/11/2025</p>
+            </div>
+            <div class="card small">
+              <h3>Presenças este mês</h3>
+              <p id="presence-count">0</p>
+            </div>
+          </div>
+
+          <div class="grid">
+            <div class="panel">
+              <h3>Últimas faturas</h3>
+              <ul id="invoices-list" class="list"></ul>
+            </div>
+            <div class="panel">
+              <h3>Últimas solicitações (Helpdesk)</h3>
+              <ul id="tickets-list" class="list"></ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Faturas -->
+        <div id="faturas" class="view hidden">
+          <div class="panel">
+            <h3>Minhas Faturas</h3>
+            <table class="invoices-table">
+              <thead>
+                <tr><th>ID</th><th>Valor</th><th>Vencimento</th><th>Status</th><th>Ações</th></tr>
+              </thead>
+              <tbody id="invoices-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Helpdesk -->
+        <div id="helpdesk" class="view hidden">
+          <div class="panel">
+            <h3>Abrir chamado</h3>
+            <form id="ticket-form">
+              <label>Assunto<input type="text" id="ticket-subject" required /></label>
+              <label>Descrição<textarea id="ticket-message" rows="4" required></textarea></label>
+              <div class="form-actions">
+                <button type="submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="panel">
+            <h3>Meus chamados</h3>
+            <ul id="tickets-list-2" class="list"></ul>
+          </div>
+        </div>
+
+        <!-- Presenças -->
+        <div id="presencas" class="view hidden">
+          <div class="panel">
+            <h3>Calendário de Presenças</h3>
+            <div id="calendar-controls" class="calendar-controls">
+              <button id="prev-month">❮</button>
+              <div id="month-label"></div>
+              <button id="next-month">❯</button>
+            </div>
+            <div id="calendar" class="calendar"></div>
+            <p class="help">Clique em um dia para marcar/desmarcar presença.</p>
+          </div>
+        </div>
+
+        <!-- Perfil (simples) -->
+        <div id="perfil" class="view hidden">
+          <div class="panel">
+            <h3>Perfil</h3>
+            <p>Nome: <strong>Usuário Exemplo</strong></p>
+            <p>Email: <strong>usuario@exemplo.com</strong></p>
+            <p>Plano: <strong id="profile-plan">Renova Premium</strong></p>
+          </div>
+        </div>
+
+        <!-- Planos -->
+        <div id="planos" class="view hidden">
+          <div class="panel">
+            <h3>Planos</h3>
+            <p>Aqui você pode exibir opções de upgrade, histórico e benefícios.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <footer class="footer">© Renova — Todos os direitos reservados</footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

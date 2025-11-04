@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renova - Planos</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renova</title>
+  <link rel="stylesheet" href="planos.css">
 </head>
 <body>
-    <header>
-        <div class="logo">Renova</div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="planos.html">Planos</a>
-            <a href="contato.html">Contato</a>
-            <a href="login.html">Login</a>
-        </nav>
-    </header>
+  <!-- Barra de navegação -->
+  <header>
+    <div class="logo">
+      <img src="renova.png" alt="Logo Renova">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Planos</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="planos">
-        <h2>Nossos Planos</h2>
-        <div class="card-planos">
-            <div class="plano">
-                <h3>musculação</h3>
-                <p>R$150/mês</p>
-                <button>Assinar</button>
-            </div>
-            <div class="plano">
-                <h3>Intermediário</h3>
-                <p>R$149/mês</p>
-                <button>Assinar</button>
-            </div>
-            <div class="plano">
-                <h3>Premium</h3>
-                <p>R$199/mês</p>
-                <button>Assinar</button>
-            </div>
-        </div>
-    </section>
+  <!-- Seção de Planos -->
+  <section class="planos">
+    <h1>Nossos Planos</h1>
 
-    <footer>
-        <p>&copy; 2025 Renova. Todos os direitos reservados.</p>
-    </footer>
+    <div class="plano">
+      <img src="musculacao.jpg" alt="Musculação">
+      <h2>Musculação</h2>
+      <p>R$150/mês</p>
+      <button>Assinar</button>
+    </div>
+
+    <div class="plano">
+      <img src="fisioterapia.jpg" alt="Fisioterapia">
+      <h2>Fisioterapia</h2>
+      <p>R$149/mês</p>
+      <button>Assinar</button>
+    </div>
+
+    <div class="plano">
+      <img src="zumba.jpg" alt="Zumba">
+      <h2>Zumba</h2>
+      <p>R$199/mês</p>
+      <button>Assinar</button>
+    </div>
+  </section>
+
+  <!-- Seção de Combos -->
+  <section class="combos">
+    <h2>Combos</h2>
+
+    <div class="combo">
+      <img src="mp.png" alt="Musculação + Pilates">
+      <h3>Musculação + Pilates</h3>
+      <p>R$350,00</p>
+      <button>Assinar</button>
+    </div>
+
+    <div class="combo">
+      <img src="combo-zumba-pilates.jpg" alt="Zumba + Pilates">
+      <h3>Zumba + Pilates</h3>
+      <p>R$299,99</p>
+      <button>Assinar</button>
+    </div>
+
+    <div class="combo">
+      <img src="combo-musculacao-zumba.jpg" alt="Musculação + Zumba">
+      <h3>Musculação + Zumba</h3>
+      <p>R$200,00</p>
+      <button>Assinar</button>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2025 Renova. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>

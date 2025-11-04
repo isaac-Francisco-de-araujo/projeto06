@@ -21,7 +21,7 @@ header {
 
 header .logo {
     font-size: 24px;
-    color: #e07b5a; /* terracota */
+    color: #ffffff; /* terracota */
     font-weight: bold;
 }
 
@@ -44,13 +44,13 @@ header nav a:hover {
 
 .hero h1 {
     font-size: 48px;
-    color: #e07b5a;
+    color: #ffffff;
     margin-bottom: 20px;
 }
 
 .hero .btn {
     padding: 15px 30px;
-    background-color: #e07b5a;
+    background-color: #ffffff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -60,7 +60,7 @@ header nav a:hover {
 }
 
 .hero .btn:hover {
-    background-color: #c76b4c;
+    background-color: #ffffff;
 }
 
 section {
@@ -89,7 +89,7 @@ section {
 
 .plano button {
     padding: 10px 20px;
-    background-color: #e07b5a;
+    background-color: #ffffff;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -97,7 +97,7 @@ section {
 }
 
 .plano button:hover {
-    background-color: #c76b4c;
+    background-color: #ffffff;
 }
 
 input, textarea {
@@ -109,7 +109,7 @@ input, textarea {
 }
 
 button[type="submit"] {
-    background-color: #e07b5a;
+    background-color: #ffffff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -155,14 +155,14 @@ footer {
 
 .hero h1 {
     font-size: 48px;
-    color: #e07b5a; /* terracota */
+    color: #ffffff; /* terracota */
     margin-bottom: 20px;
 }
 
 .hero .btn {
     padding: 15px 30px;
-    background-color: #e07b5a;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     border: none;
     cursor: pointer;
     text-decoration: none;
