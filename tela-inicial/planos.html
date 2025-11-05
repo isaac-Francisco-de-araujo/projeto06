@@ -9,15 +9,15 @@
 <body>
   <!-- Barra de navegação -->
   <header>
-    <div class="logo">
-      <img src="renova.png" alt="Logo Renova">
-    </div>
+     <div class="logo-container">
+            <img src="logo.png" alt="Logo Renova" class="logo-img">
+            <div class="logo-text">Renova</div>
+        </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Planos</a></li>
-        <li><a href="#">Contato</a></li>
-        <li><a href="#">Login</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
     </nav>
   </header>
@@ -27,24 +27,27 @@
     <h1>Nossos Planos</h1>
 
     <div class="plano">
-      <img src="musculacao.jpg" alt="Musculação">
+      <img src="m.jpg" alt="Musculação">
       <h2>Musculação</h2>
       <p>R$150/mês</p>
-      <button>Assinar</button>
+      <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+      <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=150'">Assinar</button>
     </div>
 
     <div class="plano">
-      <img src="fisioterapia.jpg" alt="Fisioterapia">
+      <img src="f.jpg" alt="Fisioterapia">
       <h2>Fisioterapia</h2>
       <p>R$149/mês</p>
-      <button>Assinar</button>
+      <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+      <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=149'">Assinar</button>
     </div>
 
     <div class="plano">
-      <img src="zumba.jpg" alt="Zumba">
+      <img src="z.jpg" alt="Zumba">
       <h2>Zumba</h2>
       <p>R$199/mês</p>
-      <button>Assinar</button>
+      <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+     <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=199'">Assinar</button>
     </div>
   </section>
 
@@ -53,30 +56,39 @@
     <h2>Combos</h2>
 
     <div class="combo">
-      <img src="mp.png" alt="Musculação + Pilates">
+      <img src="mf.jpg" alt="Musculação + Pilates">
       <h3>Musculação + Pilates</h3>
       <p>R$350,00</p>
-      <button>Assinar</button>
+      <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+      <h5> melhor custo benefício para o seu bolso </h5>
+     <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=350,00'">Assinar</button>
     </div>
 
     <div class="combo">
-      <img src="combo-zumba-pilates.jpg" alt="Zumba + Pilates">
+      <img src="zf.jpg" alt="Zumba + Pilates">
       <h3>Zumba + Pilates</h3>
       <p>R$299,99</p>
-      <button>Assinar</button>
+       <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+      <h5> melhor custo benefício para o seu bolso </h5>
+     <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=299,99'">Assinar</button>
     </div>
 
     <div class="combo">
-      <img src="combo-musculacao-zumba.jpg" alt="Musculação + Zumba">
+      <img src="mz.jpg" alt="Musculação + Zumba">
       <h3>Musculação + Zumba</h3>
       <p>R$200,00</p>
-      <button>Assinar</button>
+       <h5>Treinos personalizados, baseados nos dados do seu corpo.</h5>
+      <h5> melhor custo benefício para o seu bolso </h5>
+     <button onclick="window.location.href='pagamento.html?plano=musculacao&valor=200,00'">Assinar</button>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer>
-    <p>&copy; 2025 Renova. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+  <div class="footer-content">
+    <p>© 2025 Renova. Todos os direitos reservados.</p>
+    <a href="https://www.instagram.com/renova.academia?igsh=eDJ4MXBodWRtbGVu" target="_blank" class="instagram-link">
+      <img src="instagram.png" alt="Instagram" class="instagram-icon">
+    </a>
+  </div>
+</footer>

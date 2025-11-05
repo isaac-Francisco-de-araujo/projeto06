@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Renova — Calendário</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <img src="logo.png" alt="Renova Logo" class="logo">
+        <h1>Renova</h1>
+      </div>
+
+      <nav class="nav">
+        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
+        <a href="fatura.html" class="nav-item"><i class="fa-solid fa-file-invoice-dollar"></i><span>Fatura</span></a>
+        <a href="calendario.html" class="nav-item"><i class="fa-solid fa-calendar-days"></i><span>Calendário</span></a>
+        <a href="perfil.html" class="nav-item"><i class="fa-solid fa-user"></i><span>Perfil</span></a>
+        <a href="suporte.html" class="nav-item"><i class="fa-solid fa-headset"></i><span>Suporte</span></a>
+      </nav>
+
+
+      <div class="sidebar-footer">
+        <button onclick="logout()">Sair</button>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h2>Calendário de Presença</h2>
+      </header>
+
+      <section class="content">
+        <div class="panel">
+          <div class="calendar-controls">
+            <button onclick="prevMonth()">◀</button>
+            <span id="month-label">Novembro 2025</span>
+            <button onclick="nextMonth()">▶</button>
+          </div>
+          <div class="calendar" id="calendar"></div>
+        </div>
+      </section>
+
+       <footer>
+        <div class="footer-content">
+            <p>© 2025 Renova. Todos os direitos reservados.</p>
+            <a href="https://www.instagram.com/renova.academia?igsh=eDJ4MXBodWRtbGVu" target="_blank"
+                class="instagram-link">
+                <img src="instagram.png" alt="Instagram" class="instagram-icon">
+            </a>
+        </div>
+    </footer>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -173,3 +173,93 @@ footer {
 .hero .btn:hover {
     background-color: #c76b4c;
 }
+
+
+/* Rodapé */
+footer {
+  background-color: #0d0d0d;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.instagram-link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.instagram-icon {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.instagram-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1a1a1a;
+}
+
+/* Logo + texto */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 40px;      /* Ajuste o tamanho conforme sua logo */
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Menu */
+header nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #e07b5a;
+}

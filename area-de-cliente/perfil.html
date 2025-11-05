@@ -3,19 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Renova — Dashboard</title>
+  <title>Renova — Perfil</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
   <div class="app">
     <aside class="sidebar">
-      <div class="logo">
-        <img src="assets/logo.png" alt="Renova Logo">
-        <h2>Renova</h2>
+      <div class="brand">
+        <img src="logo.png" alt="Renova Logo" class="logo">
+        <h1>Renova</h1>
       </div>
-
       <nav class="nav">
         <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
         <a href="fatura.html" class="nav-item"><i class="fa-solid fa-file-invoice-dollar"></i><span>Fatura</span></a>
@@ -24,29 +21,35 @@
         <a href="suporte.html" class="nav-item"><i class="fa-solid fa-headset"></i><span>Suporte</span></a>
       </nav>
 
-      <button class="logout-btn">
-        <i class="fa-solid fa-right-from-bracket"></i>
-        <span>Sair</span>
-      </button>
+      <div class="sidebar-footer">
+        <button onclick="logout()">Sair</button>
+      </div>
     </aside>
 
-    <main class="content">
-      <h1>Dashboard</h1>
-      <div class="cards">
-        <div class="card small">
-          <h3>Presenças</h3>
-          <p>18 / 30 dias</p>
+    <main class="main">
+      <header class="topbar">
+        <h2>Perfil</h2>
+      </header>
+
+      <section class="content">
+        <div class="panel">
+          <h3>Meu Perfil</h3>
+          <label>Nome:</label>
+          <input type="text" value="João Silva">
+          <label>Email:</label>
+          <input type="text" value="joao@exemplo.com">
+          <div class="form-actions">
+            <button>Salvar</button>
+          </div>
         </div>
-        <div class="card small">
-          <h3>Plano</h3>
-          <p>Mensal — Ativo</p>
-        </div>
-      </div>
-      <div class="panel">
-        <h3>Bem-vindo(a) à sua área do cliente!</h3>
-        <p>Aqui você pode acompanhar suas presenças, faturas e muito mais.</p>
-      </div>
+      </section>
+
+      <footer class="footer">
+        © 2025 Academia Renova. Todos os direitos reservados.
+      </footer>
     </main>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
