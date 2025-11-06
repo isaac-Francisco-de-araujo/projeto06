@@ -90,7 +90,7 @@ body.client-dashboard {
 }
 
 /* Info Section (Plano Atual) */
-.info-section h2, .payment-section h2 {
+.info-section h2, .payment-history h2 {
     margin-bottom: 15px;
     font-size: 28px;
     color: #e07b5a;
@@ -148,4 +148,30 @@ body.client-dashboard {
     margin-top: 40px;
     font-size: 14px;
     color: #bbb;
+}
+
+/* Estilo do botão "Pagar" */
+#payNowBtn {
+    background-color: #e07b5a; /* Cor de fundo suave (laranja) */
+    color: #fff; /* Texto branco */
+    padding: 12px 30px; /* Mais espaço ao redor do texto */
+    border: none; /* Remover borda */
+    cursor: pointer; /* Cursor de mão para indicar interatividade */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 18px; /* Aumentar o tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Animações suaves */
+    display: inline-block;
+    text-align: center;
+}
+
+/* Efeito hover - cor mais intensa quando o usuário passar o mouse */
+#payNowBtn:hover {
+    background-color: #c76b4c; /* Cor mais forte ao passar o mouse */
+    transform: scale(1.05); /* Aumenta o botão levemente */
+}
+
+/* Efeito active - quando o botão é clicado */
+#payNowBtn:active {
+    background-color: #b26b4a; /* Cor para quando clicado */
+    transform: scale(0.98); /* Leve redução para o clique */
 }

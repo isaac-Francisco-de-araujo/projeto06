@@ -23,12 +23,25 @@ header {
   z-index: 10;
 }
 
-.logo {
-  color: #ffffff;
-  font-weight: bold;
-  font-size: 22px;
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
+.logo-img {
+  width: 40px; /* Tamanho da logo */
+  height: 40px;
+  object-fit: contain;
+}
+
+.logo-text {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Estilos de navegação */
 nav a {
   color: #e0e0e0;
   text-decoration: none;
@@ -156,33 +169,26 @@ footer {
   opacity: 0.8;
 }
 
-/* Logo + texto */
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+/* ====== MODAL DOS TERMOS ====== */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); /* Fundo escurecido */
+    padding-top: 60px;
 }
 
-.logo-img {
-  width: 40px;      /* Ajuste o tamanho conforme sua logo */
-  height: 40px;
-  object-fit: contain;
-}
-
-.logo-text {
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-/* Menu */
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #fff;
-  transition: color 0.3s;
-}
-
-header nav a:hover {
-  color: #e07b5a;
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    color: #000;
 }

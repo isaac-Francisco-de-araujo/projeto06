@@ -7,7 +7,7 @@
 }
 
 /* Corpo do site */
-body.payment-page {
+body.profile-page {
     display: flex;
     background-color: #1a1a1a;
     color: #fff;
@@ -76,7 +76,7 @@ body.payment-page {
     margin-bottom: 30px;
 }
 
-.payment-title {
+.profile-title {
     font-size: 36px;
     font-weight: bold;
 }
@@ -95,31 +95,61 @@ body.payment-page {
     background-color: #c76b4c;
 }
 
-/* Informações de Pagamento */
-.payment-info {
+/* Perfil */
+.profile-info {
     margin-top: 30px;
 }
 
-.invoice {
-    background-color: #333;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+.profile-header {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
-.invoice h2 {
-    font-size: 28px;
-    color: #e07b5a;
+.profile-image {
+    text-align: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.edit-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #e07b5a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-btn:hover {
+    background-color: #c76b4c;
+}
+
+.profile-details h3 {
+    font-size: 24px;
+    color: #fff;
     margin-bottom: 10px;
 }
 
-.invoice p {
+.profile-details p {
     font-size: 18px;
     color: #ccc;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.btn {
+.plan {
+    font-weight: bold;
+    color: #e07b5a;
+}
+
+.edit-profile-btn {
     padding: 10px 20px;
     background-color: #e07b5a;
     color: #fff;
@@ -129,39 +159,8 @@ body.payment-page {
     transition: background-color 0.3s;
 }
 
-.btn:hover {
+.edit-profile-btn:hover {
     background-color: #c76b4c;
-}
-
-/* Histórico de Pagamentos */
-.payment-history h2 {
-    font-size: 28px;
-    color: #e07b5a;
-    margin-bottom: 15px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table th, table td {
-    padding: 12px;
-    text-align: center;
-    border: 1px solid #333;
-}
-
-table th {
-    background-color: #444;
-}
-
-table td {
-    background-color: #333;
-    color: #fff;
-}
-
-table tr:hover {
-    background-color: #555;
 }
 
 /* Rodapé */

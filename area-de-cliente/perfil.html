@@ -1,55 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Renova — Perfil</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Academia Renova</title>
+    <link rel="stylesheet" href="perfil.css">
 </head>
-<body>
-  <div class="app">
+<body class="profile-page">
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <div class="brand">
-        <img src="logo.png" alt="Renova Logo" class="logo">
-        <h1>Renova</h1>
-      </div>
-      <nav class="nav">
-        <a href="index.html" class="nav-item"><i class="fa-solid fa-house"></i><span>Dashboard</span></a>
-        <a href="fatura.html" class="nav-item"><i class="fa-solid fa-file-invoice-dollar"></i><span>Fatura</span></a>
-        <a href="calendario.html" class="nav-item"><i class="fa-solid fa-calendar-days"></i><span>Calendário</span></a>
-        <a href="perfil.html" class="nav-item"><i class="fa-solid fa-user"></i><span>Perfil</span></a>
-        <a href="suporte.html" class="nav-item"><i class="fa-solid fa-headset"></i><span>Suporte</span></a>
-      </nav>
-
-      <div class="sidebar-footer">
-        <button onclick="logout()">Sair</button>
-      </div>
+        <div class="logo-container">
+            <img src="logotipo.png" alt="Logo da Academia" class="logo-img">
+            <span class="logo-text">Renova</span>
+        </div>
+        <nav class="menu">
+            <a href="index.html" class="menu-item">Início</a>
+            <a href="perfil.html" class="menu-item active">Perfil</a>
+            <a href="calendario.html" class="menu-item">Agenda</a>
+            <a href="pagamento.html" class="menu-item">Pagamento</a>
+            <a href="suporte.html" class="menu-item">Suporte</a>
+        </nav>
+        <footer class="footer">
+            <p>Usuário: joao@cliente.com</p>
+        </footer>
     </aside>
 
-    <main class="main">
-      <header class="topbar">
-        <h2>Perfil</h2>
-      </header>
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="header">
+            <div class="header-left">
+                <span class="profile-title">Perfil do Cliente</span>
+            </div>
+            <div class="header-right">
+                <button class="logout-btn">Sair</button>
+            </div>
+        </header>
 
-      <section class="content">
-        <div class="panel">
-          <h3>Meu Perfil</h3>
-          <label>Nome:</label>
-          <input type="text" value="João Silva">
-          <label>Email:</label>
-          <input type="text" value="joao@exemplo.com">
-          <div class="form-actions">
-            <button>Salvar</button>
-          </div>
-        </div>
-      </section>
+        <section class="profile-info">
+            <div class="profile-header">
+                <div class="profile-image">
+                    <img src="perfil.jpg" alt="Foto do Cliente" class="profile-img">
+                </div>
+                <div class="profile-details">
+                    <h3>João da Silva</h3>
+                    <p>Email: joao@cliente.com</p>
+                    <p>Plano: <span class="plan">Plano Mensal</span></p>
+                    <p>Vencimento: 15/11/2025</p>
+                </div>
+            </div>
+        </section>
 
-      <footer class="footer">
-        © 2025 Academia Renova. Todos os direitos reservados.
-      </footer>
+        <footer class="footer-main">
+            <p>&copy; 2025 Academia Renova. Todos os direitos reservados.</p>
+        </footer>
     </main>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
